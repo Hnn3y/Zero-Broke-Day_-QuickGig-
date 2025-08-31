@@ -10,74 +10,74 @@ zero-broke-days/
 │  ├─ api/                # Express + Mongoose backend
 │  │  ├─ package.json
 │  │  ├─ src/
-│  │  │  ├─ index.ts
-│  │  │  ├─ server.ts
+│  │  │  ├─ index.js
+│  │  │  ├─ server.js
 │  │  │  ├─ config/
-│  │  │  │  ├─ env.ts
-│  │  │  │  └─ logger.ts
+│  │  │  │  ├─ env.js
+│  │  │  │  └─ logger.js
 │  │  │  ├─ db/
-│  │  │  │  └─ connect.ts
+│  │  │  │  └─ connect.js
 │  │  │  ├─ middleware/
-│  │  │  │  ├─ auth.ts
-│  │  │  │  ├─ error.ts
-│  │  │  │  └─ roles.ts
+│  │  │  │  ├─ auth.js
+│  │  │  │  ├─ error.js
+│  │  │  │  └─ roles.js
 │  │  │  ├─ models/
-│  │  │  │  ├─ User.ts
-│  │  │  │  ├─ Gig.ts
-│  │  │  │  ├─ Escrow.ts
-│  │  │  │  ├─ Transaction.ts
-│  │  │  │  ├─ Dispute.ts
-│  │  │  │  └─ Kyc.ts
+│  │  │  │  ├─ User.js
+│  │  │  │  ├─ Gig.js
+│  │  │  │  ├─ Escrow.js
+│  │  │  │  ├─ Transaction.js
+│  │  │  │  ├─ Dispute.js
+│  │  │  │  └─ Kyc.js
 │  │  │  ├─ routes/
-│  │  │  │  ├─ auth.routes.ts
-│  │  │  │  ├─ gigs.routes.ts
-│  │  │  │  ├─ escrow.routes.ts
-│  │  │  │  ├─ wallet.routes.ts
-│  │  │  │  ├─ kyc.routes.ts
-│  │  │  │  └─ admin.routes.ts
+│  │  │  │  ├─ auth.routes.js
+│  │  │  │  ├─ gigs.routes.js
+│  │  │  │  ├─ escrow.routes.js
+│  │  │  │  ├─ wallet.routes.js
+│  │  │  │  ├─ kyc.routes.js
+│  │  │  │  └─ admin.routes.js
 │  │  │  ├─ controllers/
-│  │  │  │  ├─ auth.controller.ts
-│  │  │  │  ├─ gigs.controller.ts
-│  │  │  │  ├─ escrow.controller.ts
-│  │  │  │  ├─ wallet.controller.ts
-│  │  │  │  ├─ kyc.controller.ts
-│  │  │  │  └─ admin.controller.ts
+│  │  │  │  ├─ auth.controller.js
+│  │  │  │  ├─ gigs.controller.js
+│  │  │  │  ├─ escrow.controller.js
+│  │  │  │  ├─ wallet.controller.js
+│  │  │  │  ├─ kyc.controller.js
+│  │  │  │  └─ admin.controller.js
 │  │  │  ├─ services/
-│  │  │  │  ├─ payment.ts          # adapter pattern (mock: paystack/flutterwave/stripe)
-│  │  │  │  ├─ sms.ts              # stub for SMS/USSD alerts
-│  │  │  │  └─ ai.ts               # skill matching stub
+│  │  │  │  ├─ payment.js          # adapter pattern (mock: paystack/flutterwave/stripe)
+│  │  │  │  ├─ sms.js              # stub for SMS/USSD alerts
+│  │  │  │  └─ ai.js               # skill matching stub
 │  │  │  ├─ utils/
-│  │  │  │  ├─ crypto.ts
-│  │  │  │  └─ response.ts
+│  │  │  │  ├─ crypto.js
+│  │  │  │  └─ response.js
 │  │  │  └─ upload/
-│  │  │     └─ multer.ts
-│  │  └─ tsconfig.json
-│  └─ web/                # React + Vite + Tailwind front‑end
+│  │  │     └─ multer.js
+│  │  └─ jsconfig.json
+│  └─ web/                # React.js + Vite + Tailwind frontend
 │     ├─ package.json
 │     ├─ index.html
 │     └─ src/
-│        ├─ main.tsx
-│        ├─ App.tsx
-│        ├─ lib/api.ts
-│        ├─ lib/auth.ts
-│        ├─ lib/store.ts
+│        ├─ main.jsx
+│        ├─ App.jsx
+│        ├─ lib/api.js
+│        ├─ lib/auth.js
+│        ├─ lib/store.js
 │        ├─ components/
-│        │  ├─ Nav.tsx
-│        │  ├─ Protected.tsx
-│        │  ├─ GigCard.tsx
-│        │  ├─ WalletWidget.tsx
-│        │  └─ Rating.tsx
+│        │  ├─ Nav.jsx
+│        │  ├─ Protected.jsx
+│        │  ├─ GigCard.jsx
+│        │  ├─ WalletWidget.jsx
+│        │  └─ Rating.jsx
 │        ├─ pages/
-│        │  ├─ Landing.tsx
-│        │  ├─ Register.tsx
-│        │  ├─ Login.tsx
-│        │  ├─ Feed.tsx
-│        │  ├─ GigDetails.tsx
-│        │  ├─ PostGig.tsx
-│        │  ├─ Wallet.tsx
-│        │  ├─ Kyc.tsx
-│        │  ├─ Disputes.tsx
-│        │  └─ Admin.tsx
+│        │  ├─ Landing.jsx
+│        │  ├─ Register.jsx
+│        │  ├─ Login.jsx
+│        │  ├─ Feed.jsx
+│        │  ├─ GigDetails.jsx
+│        │  ├─ PostGig.jsx
+│        │  ├─ Wallet.jsx
+│        │  ├─ Kyc.jsx
+│        │  ├─ Disputes.jsx
+│        │  └─ Admin.jsx
 │        ├─ styles/index.css
 │        └─ vite-env.d.ts
 └─ docs/
